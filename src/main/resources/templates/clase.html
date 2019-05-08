@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>taller 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" th:href="@{/css/primero.css}"/>
+    </head>
+    <body>
+       
+    <table>
+        
+    <tr th:each="variable:${mivariable}">
+        <td th:text="${variable.getRu()}"/>
+        <td th:text="${variable.getNombre()}"/>
+        <td th:text="${variable.getAp()}"/>
+        <td th:text="${variable.getAm()}"/>
+        <td th:text="${variable.getEdad()}"/>
+        
+        
+        
+        
+        
+    </tr>
+    </table>
+        
+        
+        
+        
+        
+        
+    </body>
+</html>
